@@ -1,4 +1,10 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><title>BTBA SYMPOSIUM 2021</title><base href="/2021/"><meta name="viewport" content="width=device-width,initial-scale=1"><script>(function () {
+<!doctype html><html lang="en"><head><meta charset="utf-8"><title>BTBA SYMPOSIUM 2021</title><base href="/2021/"><script>
+		var baseHref = document.location.href
+			.replace(document.location.origin, "")
+			.replace("index.html", "");
+		document.head.getElementsByTagName('base')[0]
+			.setAttribute('href', '/' + parentSegment + '/');
+	</script><meta name="viewport" content="width=device-width,initial-scale=1"><script>(function () {
 			var redirect = sessionStorage.redirect;
 			delete sessionStorage.redirect;
 			if (redirect && redirect != location.href) {
